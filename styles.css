@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+.hero {
+  background-color: #1F2937;
+  color: white;
+  display: flex;
+}
+
+h1 {
+  font-size: 48px;
+  color: #F9FAF8;
+  font-weight: 800;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+}
+
+header {
+  justify-content: space-between;
+  align-content: center;
+  padding: 16px 48px 48px 48px;
+}
+/*Having trouble aligning image and text in hero section. Might have
+to separate each into a container to get everything to align. First
+try importing an image with a size so that you can see how it works.
+It'd be smart to make the text align dynamically so the middle line
+is always in the middle. */
+.hero {
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
